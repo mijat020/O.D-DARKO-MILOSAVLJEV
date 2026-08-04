@@ -1,0 +1,22 @@
+document.addEventListener("DOMContentLoaded", function () {
+
+    const links = document.querySelectorAll("nav a");
+
+    links.forEach(link => {
+
+        link.addEventListener("click", function () {
+
+            const menu = document.querySelector("nav ul");
+
+            if (menu.classList.contains("open")) {
+                menu.classList.remove("open");
+            }
+
+        });
+
+    });
+
+
+    console.log("D.O. Darko Milosavljev sajt učitan.");
+
+});

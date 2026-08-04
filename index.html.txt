@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>D.O. Darko Milosavljev | Novi Bečej</title>
+
+<meta name="description" content="D.O. Darko Milosavljev - sveže voće i povrće u Novom Bečeju. Maršala Tita 67.">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <h1>D.O.</h1>
+            <span>DARKO MILOSAVLJEV</span>
+        </div>
+
+        <ul>
+            <li><a href="#pocetna">Početna</a></li>
+            <li><a href="#ponuda">Ponuda</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="pocetna" class="hero">
+
+    <div class="hero-content">
+        <h2>Sveže voće i povrće svaki dan</h2>
+
+        <p>
+            Kvalitetni proizvodi, povoljne cene i ljubazna usluga.
+        </p>
+
+        <a href="#kontakt" class="btn">
+            Posetite nas
+        </a>
+    </div>
+
+</section>
+
+
+<section class="about">
+
+<h2>O nama</h2>
+
+<p>
+D.O. Darko Milosavljev nalazi se u Novom Bečeju i nudi
+širok izbor svežeg voća, povrća i sezonskih proizvoda.
+</p>
+
+</section>
+
+
+
+<section id="ponuda">
+
+<h2>Naša ponuda</h2>
+
+<div class="products">
+
+<div class="product">
+<h3>🍎 Voće</h3>
+<p>
+Sveže jabuke, banane, citrusi i sezonsko voće.
+</p>
+</div>
+
+
+<div class="product">
+<h3>🥕 Povrće</h3>
+<p>
+Kvalitetno povrće za svakodnevnu upotrebu.
+</p>
+</div>
+
+
+<div class="product">
+<h3>🍉 Sezona</h3>
+<p>
+Najbolji proizvodi u zavisnosti od godišnjeg doba.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="gallery">
+
+<h2>Galerija</h2>
+
+<div class="gallery-box">
+<p>
+Fotografije prodavnice uskoro.
+</p>
+</div>
+
+</section>
+
+
+
+<section id="kontakt">
+
+<h2>Kontakt</h2>
+
+
+<div class="contact">
+
+<p>
+📍 Maršala Tita 67<br>
+Novi Bečej 23272
+</p>
+
+
+<p>
+🕒 Radno vreme:<br>
+Ponedeljak - Subota<br>
+08:00 - 19:00
+<br><br>
+Nedelja<br>
+08:00 - 12:00
+</p>
+
+
+<a class="btn" 
+href="https://www.google.com/maps/search/?api=1&query=Mar%C5%A1ala+Tita+67+Novi+Be%C4%8Dej"
+target="_blank">
+Google mapa
+</a>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>
+© 2026 D.O. Darko Milosavljev
+</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
