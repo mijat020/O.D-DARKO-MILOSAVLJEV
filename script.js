@@ -1,22 +1,45 @@
-document.addEventListener("DOMContentLoaded", function () {
-
-    const links = document.querySelectorAll("nav a");
-
-    links.forEach(link => {
-
-        link.addEventListener("click", function () {
-
-            const menu = document.querySelector("nav ul");
-
-            if (menu.classList.contains("open")) {
-                menu.classList.remove("open");
-            }
-
-        });
-
-    });
+const button = document.getElementById("theme-toggle");
 
 
-    console.log("D.O. Darko Milosavljev sajt učitan.");
+button.onclick = ()=>{
+
+document.body.classList.toggle("dark");
+
+
+if(document.body.classList.contains("dark")){
+
+button.innerHTML="☀️";
+
+}else{
+
+button.innerHTML="🌙";
+
+}
+
+};
+
+
+
+const sections=document.querySelectorAll("section");
+
+
+window.addEventListener("scroll",()=>{
+
+
+sections.forEach(section=>{
+
+
+let top=section.getBoundingClientRect().top;
+
+
+if(top < window.innerHeight-100){
+
+section.classList.add("show");
+
+}
+
+
+});
+
 
 });
