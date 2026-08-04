@@ -1,23 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 
-
 :root{
     --bg:#f5f5f7;
     --text:#111;
-    --card:rgba(255,255,255,.75);
+    --card:rgba(255,255,255,.8);
     --accent:#7c3aed;
     --shadow:0 20px 50px rgba(0,0,0,.12);
 }
 
-
 .dark{
     --bg:#09090b;
     --text:#fff;
-    --card:rgba(255,255,255,.08);
+    --card:rgba(255,255,255,.1);
     --accent:#22c55e;
     --shadow:0 20px 50px rgba(0,0,0,.5);
 }
-
 
 
 *{
@@ -28,104 +25,88 @@
 }
 
 
+html,body{
+    width:100%;
+    min-height:100%;
+}
+
 
 body{
-
     font-family:'Inter',sans-serif;
     background:var(--bg);
     color:var(--text);
-    transition:.5s;
-
+    transition:.4s;
 }
-
 
 
 /* NAV */
 
 header{
-
     position:fixed;
     top:0;
     width:100%;
-    z-index:100;
-
+    z-index:1000;
 }
 
 
-
 nav{
-
     width:90%;
     margin:20px auto;
-
     display:flex;
     align-items:center;
     justify-content:space-between;
-
     padding:15px 30px;
 
     background:var(--card);
     backdrop-filter:blur(15px);
 
     border-radius:25px;
-
     box-shadow:var(--shadow);
-
 }
 
+
+.logo a{
+    text-decoration:none;
+    color:var(--text);
+}
 
 
 .logo h1{
-
     color:var(--accent);
     font-size:35px;
-
 }
 
 
-
 .logo span{
-
     font-size:12px;
     font-weight:700;
-
 }
 
 
 
 ul{
-
     display:flex;
     gap:25px;
     list-style:none;
-
 }
-
 
 
 ul a{
-
     color:var(--text);
     text-decoration:none;
     font-weight:600;
-    transition:.3s;
-
 }
-
 
 
 ul a:hover{
-
     color:var(--accent);
-
 }
 
 
 
-/* DARK BUTTON */
+/* BUTTON */
 
 #theme-toggle{
-
     border:none;
     cursor:pointer;
 
@@ -138,27 +119,14 @@ ul a:hover{
     color:white;
 
     font-size:20px;
-
-    transition:.4s;
-
 }
-
-
-
-#theme-toggle:hover{
-
-    transform:rotate(180deg) scale(1.1);
-
-}
-
 
 
 
 /* HERO */
 
 .hero{
-
-    height:100vh;
+    min-height:100vh;
 
     display:flex;
     justify-content:center;
@@ -166,48 +134,34 @@ ul a:hover{
 
     text-align:center;
 
-
     background:
-
     radial-gradient(
-    circle at top,
-    var(--accent),
-    transparent 45%
+        circle at top,
+        var(--accent),
+        transparent 45%
     );
-
 }
-
 
 
 .hero-content{
-
     animation:show 1s;
-
 }
-
 
 
 .hero h2{
-
     font-size:60px;
     max-width:900px;
-
 }
-
 
 
 .hero p{
-
     font-size:20px;
     margin:25px;
-
 }
-
 
 
 
 .btn{
-
     display:inline-block;
 
     padding:15px 35px;
@@ -221,45 +175,20 @@ ul a:hover{
     text-decoration:none;
 
     font-weight:700;
-
-    transition:.4s;
-
 }
 
 
-
-.btn:hover{
-
-    transform:translateY(-8px) scale(1.05);
-
-    box-shadow:0 20px 40px var(--accent);
-
-}
-
-
-
-
-/* SECTIONS */
 
 section{
-
     padding:100px 10%;
-
     text-align:center;
-
 }
-
 
 
 h2{
-
     font-size:40px;
-
     margin-bottom:30px;
-
 }
-
-
 
 
 
@@ -268,20 +197,15 @@ h2{
 .products{
 
     display:grid;
-
     grid-template-columns:repeat(3,1fr);
-
     gap:30px;
 
 }
 
 
-
 .product{
 
     background:var(--card);
-
-    backdrop-filter:blur(20px);
 
     padding:40px 25px;
 
@@ -289,28 +213,20 @@ h2{
 
     box-shadow:var(--shadow);
 
-    transition:.5s;
-
-    cursor:pointer;
-
 }
 
 
 
-.product:hover{
-
-    transform:
-
-    translateY(-15px)
-    rotateX(8deg)
-    scale(1.05);
-
+.product h3,
+.product p{
+    color:var(--text);
 }
 
 
 
 
 /* GALLERY */
+
 
 .gallery-box{
 
@@ -322,9 +238,9 @@ h2{
 
     display:flex;
 
-    align-items:center;
-
     justify-content:center;
+
+    align-items:center;
 
     box-shadow:var(--shadow);
 
@@ -334,6 +250,7 @@ h2{
 
 
 /* CONTACT */
+
 
 .contact{
 
@@ -345,8 +262,6 @@ h2{
 
     background:var(--card);
 
-    backdrop-filter:blur(20px);
-
     border-radius:30px;
 
     box-shadow:var(--shadow);
@@ -354,13 +269,8 @@ h2{
 }
 
 
-
 .contact p{
-
     line-height:1.8;
-
-    margin-bottom:25px;
-
 }
 
 
@@ -377,59 +287,39 @@ footer{
 
 
 
-
 @keyframes show{
 
 from{
-
     opacity:0;
-
     transform:translateY(40px);
-
 }
 
 to{
-
     opacity:1;
-
+    transform:translateY(0);
 }
 
 }
-
 
 
 
 @media(max-width:800px){
 
-
 nav{
-
     flex-direction:column;
     gap:15px;
-
 }
-
 
 ul{
-
     gap:15px;
-
 }
-
 
 .hero h2{
-
     font-size:35px;
-
 }
-
-
 
 .products{
-
     grid-template-columns:1fr;
-
 }
-
 
 }
